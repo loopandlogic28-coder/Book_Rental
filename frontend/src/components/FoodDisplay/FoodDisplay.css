@@ -1,0 +1,90 @@
+.food-display {
+  margin-top: 20px;
+  padding: 0 5%;
+  text-align: center;
+}
+
+/* Divider under banner */
+.section-divider {
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  margin: 0 auto 30px auto;
+  border-radius: 2px;
+}
+
+/* Title */
+.food-display h2 {
+  font-size: max(2.2vw, 26px);
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Grid layout */
+/* .food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+  row-gap: 50px;
+  justify-content: center;
+} */
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 30px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+/* View More Button */
+.view-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.view-more-btn {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.view-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .food-display {
+    padding: 0 3%;
+  }
+
+  .view-more-btn {
+    padding: 12px 35px;
+    font-size: 15px;
+  }
+
+  .section-divider {
+    width: 90%;
+  }
+
+    .food-display-list {
+    grid-template-columns: 1fr; /* 1 card on mobile */
+  }
+}
+
+@media (max-width: 1024px) {
+  .food-display-list {
+    grid-template-columns: repeat(1, 1fr); /* 2 cards on tablet */
+  }
+}

@@ -1,0 +1,177 @@
+.rent-page {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f3efe3; /* warm vintage paper color */
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-family: "Georgia", serif; /* classic font */
+  transform: translateY(-30px); /* move up */
+}
+
+.page-title {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #3b2f2f; /* warm dark color */
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* --- Book summary section --- */
+.book-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #fdfcf8; /* soft cream tone */
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.book-image img {
+  width: 180px;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.book-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-details h3 {
+  color: #3b2f2f;
+  margin-bottom: 5px;
+}
+
+.author {
+  color: #7a6a5a;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.book-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.book-info-table td {
+  padding: 4px 8px;
+  font-size: 0.95rem;
+}
+
+.book-info-table td:first-child {
+  width: 45%;
+  color: #3b2f2f;
+}
+
+.book-info-table td:last-child {
+  color: #8b7355; /* muted brown for price */
+  font-weight: 500;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+
+/* --- Form section --- */
+.rent-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #3b2f2f;
+  margin-bottom: 4px;
+}
+
+.form-group input {
+  padding: 9px;
+  border: 1px solid #d8d3c3;
+  border-radius: 8px;
+  transition: 0.2s;
+  background: #fdfcf8;
+  font-family: "Georgia", serif;
+}
+
+.form-group input:focus {
+  border-color: #8b7355; /* muted brown on focus */
+  outline: none;
+}
+
+.error {
+  color: #d9534f;
+  font-size: 0.8rem;
+  margin-top: 3px;
+}
+
+.charges-section {
+  background: #f8f3e9;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #3b2f2f;
+}
+
+.charges-section p {
+  margin: 4px 0;
+}
+
+/* Buttons */
+.rent-btn {
+  background: #8b7355; /* warm brown */
+  color: #fffaf0;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+  font-family: "Georgia", serif;
+}
+
+.rent-btn:hover {
+  background: #6e5a3a; /* darker brown on hover */
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+  font-family: "Georgia", serif;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .book-summary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
