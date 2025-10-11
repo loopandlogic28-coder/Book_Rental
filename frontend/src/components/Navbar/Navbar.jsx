@@ -1169,7 +1169,7 @@ const [menu, setMenu] = useState(
           }}
           className={menu === "explore" ? "active" : ""}
         >
-          menu
+          Explore
         </Link>
         
         {/* <a
