@@ -12,8 +12,8 @@ import RentBookRequest from './components/Pages/RentBookRequest/RentBookRequest'
 
 const App = () => {
 
-  // const url ="https://grillz-backend.onrender.com"
-  const url ="http://localhost:4000"
+  const url ="https://book-rental-backend-mjwe.onrender.com"
+  // const url ="http://localhost:4000"
 
   return (
     <div>
