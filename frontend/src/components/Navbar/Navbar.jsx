@@ -1161,16 +1161,16 @@ const [menu, setMenu] = useState(
         >
           menu
         </Link> */}
-       <a
-          href="/exploreall"
+       <Link
+          to="/exploreall"
           onClick={() => {
-            setMenu("explore");
+            setMenu("exploreall")
             handleCategorySelect();
           }}
           className={menu === "explore" ? "active" : ""}
         >
           menu
-        </a>
+        </Link>
         
         {/* <a
           href="#app-download"
