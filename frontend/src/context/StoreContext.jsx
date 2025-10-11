@@ -12,8 +12,8 @@ const StoreContextProvider = (props) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);  // Manage authentication status
 const [loading, setLoading] = useState(true);
 
-  // const url = "https://grillz-backend.onrender.com";
-  const url = "http://localhost:4000";
+  const url = "https://book-rental-backend-mjwe.onrender.com";
+  // const url = "http://localhost:4000";
 
   useEffect(() => {
   async function loadData() {
