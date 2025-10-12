@@ -1,24 +1,3 @@
-// import express from 'express';
-// import { 
-//   createRental, 
-//   getUserRentals, 
-//   getAllRentals, 
-//   updateRentalStatus, 
-//   cancelRental 
-// } from '../controllers/rentalController.js';
-
-// const router = express.Router();
-
-// router.post('/', createRental);
-// router.get('/user/:userId', getUserRentals);
-// router.get('/', getAllRentals);
-// router.put('/:rentalId/status', updateRentalStatus);
-// router.put('/:rentalId/cancel', cancelRental);
-
-// export default router;
-
-
-// given my gpt 
 
 import express from 'express';
 import {

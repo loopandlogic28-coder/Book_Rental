@@ -12,7 +12,9 @@ const statusOptions = [
 
 const RentBookRequest = () => {
   // ✅ No need for StoreContext in Admin; just use backend URL directly
-  const url = 'http://localhost:4000';
+  // const url = 'http://localhost:4000';
+  const url ="https://book-rental-backend-mjwe.onrender.com"
+
   const [requests, setRequests] = useState([]);
   const [loading, setLoading] = useState(true);
 
