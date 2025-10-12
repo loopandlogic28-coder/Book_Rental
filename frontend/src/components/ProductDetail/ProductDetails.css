@@ -17,21 +17,26 @@
 }
 
 .product-image-card {
-  background: #fdfcf8;
+  background: #fdfcf8; /* optional uniform background */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border: 1px solid #d8d3c3;
+  border: 1px solid #d8d3c3; /* optional, keeps uniform border all around */
+  height: 400px; /* fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-image-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* full coverage, no white spaces */
   transition: transform 0.4s ease;
 }
 
 .product-image-card img:hover {
-  transform: scale(1.02);
+  transform: scale(1.03); /* subtle hover zoom */
 }
 
 /* Info section */

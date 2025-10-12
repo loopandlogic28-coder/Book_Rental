@@ -160,7 +160,7 @@ const Add = ({ url }) => {
     name: '',
     description: '',
     price: '',
-    category: 'tshirt',
+    category: 'Fiction',
   });
 
   const onChangeHandler = (event) => {
@@ -217,7 +217,7 @@ const Add = ({ url }) => {
           name: '',
           description: '',
           price: '',
-          category: 'tshirt',
+          category: 'Fiction',
         });
         setImage(null);
         toast.success(response.data.message);
@@ -279,14 +279,14 @@ const Add = ({ url }) => {
               value={data.category}
               required
             >
-              <option value="Earrings">Fiction</option>
-              <option value="Rolls">Non-Fiction</option>
-              <option value="Deserts">Comics</option>
-              <option value="Sandwich">Novels</option>
-              <option value="Cake">Finance</option>
-              <option value="Pure Veg">Technology</option>
-              <option value="Pasta">Travel</option>
-              <option value="Noodles">Health</option>
+              <option value="Fiction">Fiction</option>
+              <option value="Non-Fiction">Non-Fiction</option>
+              <option value="Comics">Comics</option>
+              <option value="Novels">Novels</option>
+              <option value="Finance">Finance</option>
+              <option value="Technology">Technology</option>
+              <option value="Travel">Travel</option>
+              <option value="Health">Health</option>
             </select>
           </div>
           <div className="add-price flex-col">

@@ -18,6 +18,6 @@ export const assets ={
     bookdowwhite
 }
 
-export const url = 'https://book-rental-backend-mjwe.onrender.com'
-// export const url = 'http://localhost:4000'
+// export const url = 'https://book-rental-backend-mjwe.onrender.com'
+export const url = 'http://localhost:4000'
 

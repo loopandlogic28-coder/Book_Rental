@@ -207,7 +207,13 @@ const MyOrders = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.post(url + "/api/order/userorders", {}, { headers: { token } });
+      // const response = await axios.post(url + "/api/order/userorders", {}, { headers: { token } });
+      const response = await axios.post(
+  url + "/api/order/userorders",
+  {},
+  { headers: { Authorization: `Bearer ${token}` } } // ✅ correct
+);
+
       const orders = response.data.data;
       setData(orders.reverse()); // Reverse the array to show the most recent order at the top
     } catch (error) {
