@@ -99,7 +99,10 @@ const ProductsYouMayLike = ({ productId }) => {
                   <img
                     alt={product.name}
                     className="youmaylike-product-image"
-                    src={`${url}/images/${product.image}`}
+                    // src={`${url}/images/${product.image}`}   
+                    // uppar wala cloudinary k bina proper hai 
+                    src={product.image}
+
                   />
                 </div>
                 <div className="youmaylike-product-info">

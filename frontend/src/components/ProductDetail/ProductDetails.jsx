@@ -181,7 +181,10 @@ const ProductDetail = () => {
       <div className="product-detail">
         <div className="product-image">
           <div className="product-image-card">
-            <img src={`${url}/images/${product.image}`} alt={product.name} />
+            {/* <img src={`${url}/images/${product.image}`} alt={product.name} /> */}  
+            {/* uppar wala cloudinary k bina hai  */}
+            <img src={product.image} alt={product.name} />
+
           </div>
         </div>
 
