@@ -9,7 +9,7 @@ import orderRouter from "./routes/orderRoute.js"
 
 import authMiddleware from "./middleware/auth.js"
 import rentalRoutes from "./routes/rentalRoute.js"
-
+import path from "path";
 
 // app config
 const app = express()
@@ -24,7 +24,7 @@ connectDB();
 
 // api endpoint
 app.use("/api/food",foodRouter)
-app.use("/images",express.static('uploads'))
+app.use("/images", express.static(path.join(process.cwd(), "uploads")))
 app.use("/api/user",userRouter)
 app.use("/api/cart",cartRouter)
 app.use("/api/order",orderRouter)

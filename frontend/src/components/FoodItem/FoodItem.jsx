@@ -186,7 +186,11 @@ const FoodItem = ({ id, name, price, description, image }) => {
   return (
     <Link to={`/product-detail/${id}`} className="food-item">
       <div className="food-item-img-container">
-        <img className='food-item-image' src={url + "/images/" + image} alt={name} />
+        {/* <img className='food-item-image' src={url + "/images/" + image} alt={name} /> */}
+          {/* cloudinary testing uppar wala original line hai ok na  */}
+<img className='food-item-image' src={image} alt={name} />
+
+
         {!itemCount ? (
           <img
             className='add'

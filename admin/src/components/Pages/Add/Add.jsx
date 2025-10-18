@@ -63,7 +63,12 @@ const Add = ({ url }) => {
     formData.append('image', image);
 
     try {
-      const response = await axios.post(`${url}/api/food/add`, formData);
+      // const response = await axios.post(`${url}/api/food/add`, formData);
+      // uppar ka coludinary ka hai 
+
+      const response = await axios.post(`${url}/api/food/add`, formData, {
+  headers: { "Content-Type": "multipart/form-data" }
+});
       if (response.data.success) {
         setData({
           name: '',
@@ -96,6 +101,7 @@ const Add = ({ url }) => {
             onChange={handleImageChange}
             type="file"
             id="image"
+             name="image" 
             hidden
             required
           />
