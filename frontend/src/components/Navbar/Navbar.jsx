@@ -1164,7 +1164,7 @@ const [menu, setMenu] = useState(
        <Link
           to="/exploreall"
           onClick={() => {
-            setMenu("exploreall")
+            setMenu("explore")
             handleCategorySelect();
           }}
           className={menu === "explore" ? "active" : ""}
