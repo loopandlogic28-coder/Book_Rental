@@ -1206,6 +1206,16 @@ const [menu, setMenu] = useState(
         >
           contact-us
         </Link> 
+         <Link
+          to="/donate"
+          onClick={() => {
+            setMenu("donate")
+            handleCategorySelect();
+          }}
+          className={menu === "donate" ? "active" : ""}
+        >
+          Donate
+        </Link> 
         {/* //cht now linnk */}
         {/* <Link
           to="/chatbot"

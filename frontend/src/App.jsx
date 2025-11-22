@@ -207,6 +207,7 @@ import Chatbot from './pages/ChatBot/ChatBot';
 
 import ChatButton from './components/ChatButton/ChatButton';
 import ChatPopup from './components/ChatPopup/ChatPopup';
+import Donate from './pages/Donate/Donate';
 
 const App = () => {
 
@@ -240,6 +241,8 @@ const App = () => {
           <Route path='/rentedbooks' element={<RentedBooks />} />
           <Route path='/contactus' element={<ContactUs />} />
           <Route path='/chatbot' element={<Chatbot />} />
+          <Route path='/donate' element={<Donate/>} />
+
         </Routes>
       </div>
 
