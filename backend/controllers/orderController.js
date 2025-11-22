@@ -64,8 +64,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // };
 
 const placeOrder = async (req, res) => {
-    const frontend_url = "http://localhost:5173";
-
+    // const frontend_url = "http://localhost:5173"; //frontend url to change
+    const frontend_url = "https://bookdow.netlify.app";
     try {
         // Use authenticated user
         const userId = req.user._id.toString();  // ✅ get userId from auth middleware
