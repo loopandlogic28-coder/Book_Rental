@@ -7,6 +7,7 @@ import Footer from '../../components/Footer/Footer'
 import AppDownload from '../../components/AppDownload/AppDownload'
 import Chetan from '../../components/chetan/Chetan'
 import Testimonials from '../../components/Testimonials/Testimonials'
+import CTASection from '../../components/CTASection/CTASection'
 
 const Home = () => {
 const [category,setCategory] = useState("All");
@@ -19,6 +20,7 @@ const [category,setCategory] = useState("All");
       <FoodDisplay category={category}/>
       {/* <AppDownload/> */}
       <Testimonials />
+      <CTASection/>
     
       
     </div>

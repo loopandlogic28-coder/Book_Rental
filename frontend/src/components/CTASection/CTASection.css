@@ -1,0 +1,102 @@
+.cta-section {
+  background: #f5f0eb; /* light brown background */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-content {
+  max-width: 1200px; /* increased width for desktops */
+  width: 90%; /* takes most of the screen width */
+  text-align: center;
+  border-radius: 16px;
+  padding: 50px 40px; /* more padding for a premium look */
+  background: #fff8f3; /* slightly lighter shade for inner box */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cta-content h2 {
+  font-size: 36px; /* slightly bigger on desktop */
+  color: #6b4c3b; /* dark brown */
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 20px; /* bigger for better readability */
+  color: #8c6f5a; /* medium brown */
+  margin-bottom: 35px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-buttons .btn {
+  padding: 14px 35px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #a67c52; /* warm brown */
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #8c5e3c;
+}
+
+.btn-secondary {
+  background-color: #d9b89f; /* light brown */
+  color: #4b2e1f;
+}
+
+.btn-secondary:hover {
+  background-color: #c79f87;
+}
+
+.btn-tertiary {
+  background-color: #fff4e8; /* very light brown */
+  color: #6b4c3b;
+  border: 2px solid #6b4c3b;
+}
+
+.btn-tertiary:hover {
+  background-color: #f2e0d6;
+}
+
+/* Responsive for tablets & mobiles */
+@media (max-width: 1024px) {
+  .cta-content {
+    width: 95%;
+    padding: 40px 25px;
+  }
+  .cta-content h2 {
+    font-size: 32px;
+  }
+  .cta-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-content {
+    width: 100%;
+    padding: 35px 20px;
+  }
+  .cta-content h2 {
+    font-size: 26px;
+  }
+  .cta-content p {
+    font-size: 16px;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

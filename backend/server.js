@@ -10,6 +10,8 @@ import orderRouter from "./routes/orderRoute.js"
 import authMiddleware from "./middleware/auth.js"
 import rentalRoutes from "./routes/rentalRoute.js"
 import path from "path";
+import chatbotRouter from "./routes/chatbotRoute.js";
+
 
 // app config
 const app = express()
@@ -30,6 +32,8 @@ app.use("/api/cart",cartRouter)
 app.use("/api/order",orderRouter)
 
 app.use('/api/rentals', rentalRoutes);
+app.use("/api/chatbot", chatbotRouter);
+
 
 
 app.get("/",(req,res)=>{
@@ -38,6 +42,7 @@ app.get("/",(req,res)=>{
 
 app.listen(port,()=>{
     console.log(`server started on http://localhost:${port}`)
+      console.log("GEMINI_API_KEY loaded:", process.env.OPENAI_API_KEY ? "✅" : "❌");
 })//sunning express
 
 // mongodb+srv://chetanmallah28:A3867700@cluster0.29bji4n.mongodb.net/

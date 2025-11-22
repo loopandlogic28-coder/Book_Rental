@@ -1206,6 +1206,17 @@ const [menu, setMenu] = useState(
         >
           contact-us
         </Link> 
+        {/* //cht now linnk */}
+        {/* <Link
+          to="/chatbot"
+          onClick={() => {
+            setMenu("chatbot")
+            handleCategorySelect();
+          }}
+          className={menu === "chatbot" ? "active" : ""}
+        >
+          chat-now 
+                 </Link>  */}
       </ul>
       <div className="navbar-right">
         {showSearchBar ? (
