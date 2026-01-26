@@ -1149,7 +1149,7 @@ const [menu, setMenu] = useState(
           onClick={() => setMenu("home")}
           className={menu === "home" ? "active" : ""}
         >
-          home
+          Home
         </Link>
        {/* <Link
           to="/chetan"
@@ -1187,7 +1187,7 @@ const [menu, setMenu] = useState(
           }}
           className={menu === "aboutus" ? "active" : ""}
         >
-          about-us
+          About-Us
         </Link> 
         {/* <a
           href="#footer"
@@ -1204,7 +1204,7 @@ const [menu, setMenu] = useState(
           }}
           className={menu === "contactus" ? "active" : ""}
         >
-          contact-us
+          Contact-Us
         </Link> 
          <Link
           to="/donate"

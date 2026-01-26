@@ -1,4 +1,4 @@
-.add{
+/* .add{
     width: 70%;
     margin-left: max(5vw,25px);
     margin-top: 50px;
@@ -19,7 +19,7 @@
 
 .book-card img {
   width: 100%;
-  height: 250px;          /* or any fixed height that fits your design */
+  height: 250px;         
   object-fit: cover;
   border-radius: 10px;
 }
@@ -51,4 +51,91 @@
     color: white;
     cursor: pointer;
 }
+ */
 
+
+ /* // older css best hai ok hai deployed , but new wale mein toast add kar rhae and many miroee stuff  */
+
+ .add {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  color: #6d6d6d;
+  font-size: 16px;
+}
+
+.add form {
+  gap: 20px;
+}
+
+.add-img-upload img {
+  aspect-ratio: 1 / 1;
+  width: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.book-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.add-product-name,
+.add-product-description {
+  width: max(40%, 280px);
+}
+
+.add-product-name input,
+.add-product-description textarea {
+  padding: 10px;
+}
+
+.add-category-price {
+  display: flex;
+  gap: 30px;
+}
+
+.add-category-price select,
+.add-category-price input {
+  max-width: 120px;
+  padding: 10px;
+}
+
+/* ======================
+   ADD BUTTON + LOADER
+====================== */
+.add-button {
+  max-width: 120px;
+  height: 40px; /* fixed height so no jump */
+  border: none;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Spinner inside button */
+.btn-loader {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-top: 3px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

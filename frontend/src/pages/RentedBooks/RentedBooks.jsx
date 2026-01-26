@@ -170,7 +170,17 @@ const RentedBooks = () => {
           const { daysRented, lateDays, lateFee } = calculateDaysAndLate(r);
           return (
             <div key={r._id} className={`rental-card ${r.status === 'cancelled' ? 'cancelled' : ''}`}>
-              <img src={`${url}/images/${r.productId?.image}`} alt={r.productId?.name} />
+              {/* <img src={`${url}/images/${r.productId?.image}`} alt={r.productId?.name} /> // yej wali line mein hum mongodb mein clodianry k through kar rhae toh woh use karna hai  */}
+
+              <img
+  src={r.productId?.image}
+  alt={r.productId?.name}
+  className="rental-book-img"
+  onError={(e) => {
+    e.target.src = "/no-image.png"; // optional fallback
+  }}
+/>
+
               <div className="rental-info">
                 <h3>{r.productId?.name}</h3>
                 <p>

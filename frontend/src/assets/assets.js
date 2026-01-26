@@ -97,6 +97,13 @@ import novel from "./Novels.jpg"
 import technology from "./Technology.jpg"
 
 
+import hindi_book from "./hindi_book.webp"
+import marathi_book from "./marathi_book.svg"
+import gujrati_book from "./gujrati_book.jpg"
+import french_book from "./french_book.jpg"
+import urdu_book from "./urdu_book.jpg"
+
+
 
 
 // user  guid imgs
@@ -154,7 +161,13 @@ export const assets = {
     user_2,
     user_3,
     user_4,
-    aboutusbook
+    aboutusbook,
+
+    hindi_book,
+    marathi_book,
+    french_book,
+    gujrati_book,
+    urdu_book,
 }
 
 export const menu_list = [
@@ -182,14 +195,27 @@ export const menu_list = [
         menu_name: "Technology",
         menu_image: technology
     },
+  
     {
-        menu_name: "Travel",
-        menu_image: menu_7
+        menu_name: "Hindi",
+        menu_image: hindi_book
+    },
+{
+        menu_name: "Marathi",
+        menu_image: marathi_book
     },
     {
-        menu_name: "Health",
-        menu_image: menu_8
+        menu_name: "Gujrati",
+        menu_image: gujrati_book
     },
+    {
+        menu_name: "French",
+        menu_image: french_book
+    },
+    {
+  menu_name: "Urdu",
+  menu_image: urdu_book
+},
 
     // shirt storee testing 
     

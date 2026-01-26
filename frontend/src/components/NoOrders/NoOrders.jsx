@@ -7,7 +7,7 @@ const NoOrders = () => {
     <div className="no-orders-container">
       <h2 className="no-orders-title">No Orders Yet!</h2>
       <p className="no-orders-message">
-        You haven't placed any orders yet. Browse our menu and order your favorite food now!
+        You haven't placed any orders yet. Browse our menu and order your favorite Book now!
       </p>
       <Link to="/exploreall">
         <button className="browse-menu-button">Browse Menu</button>

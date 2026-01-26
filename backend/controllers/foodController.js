@@ -176,9 +176,9 @@ const addFood = async (req, res) => {
       cloudinary_id: result.public_id // for deletion
     });
 
-    res.json({ success: true, message: "Food added", data: food });
+    res.json({ success: true, message: "Book Added", data: food });
   } catch (err) {
-    console.error("Error in addFood:", err);
+    console.error("Error in addBook:", err);
     res.status(500).json({ success: false, message: err.message });
   }
 };
@@ -200,7 +200,7 @@ res.json({success:true,data:foods});
 const removeFood = async (req, res) => {
   try {
     const food = await foodModel.findById(req.body.id);
-    if (!food) return res.status(404).json({ success: false, message: "Food not found" });
+    if (!food) return res.status(404).json({ success: false, message: "Book not found" });
 
     // Delete image from Cloudinary
     if (food.cloudinary_id) {
@@ -208,9 +208,9 @@ const removeFood = async (req, res) => {
     }
 
     await foodModel.findByIdAndDelete(req.body.id);
-    res.json({ success: true, message: "Food removed" });
+    res.json({ success: true, message: "Book removed" });
   } catch (err) {
-    console.error("Error in removeFood:", err);
+    console.error("Error in removeBook:", err);
     res.status(500).json({ success: false, message: err.message });
   }
 };
@@ -220,7 +220,7 @@ const getFoodById = async (req, res) => {
   try {
     const food = await foodModel.findById(req.params.id);
     if (!food) {
-      return res.status(404).json({ success: false, message: "Food not found" });
+      return res.status(404).json({ success: false, message: "Book not found" });
     }
     res.json({ success: true, data: food });
   } catch (error) {

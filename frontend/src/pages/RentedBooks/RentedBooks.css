@@ -1,4 +1,4 @@
-.rental-card, .admin-rental-card {
+/* .rental-card, .admin-rental-card {
   display:flex;
   gap:16px;
   padding:12px;
@@ -31,4 +31,149 @@
   padding: 4px 8px;
   border-radius:4px;
   border:1px solid red;
+} */
+
+
+/* uppar ka deisng bhi shai hai but cloudinary se img shaow karnwane k liye andd best look ui denen k liye new code buddy  */
+
+.rental-card,
+.admin-rental-card {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;                 /* ⬅️ image–text spacing controlled */
+  padding: 18px 22px;        /* ⬅️ left-right thoda zyada padding */
+  margin-bottom: 18px;
+
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rented-books-page {
+  padding-top: 10px;
+}
+
+.rented-books-page h2 {
+  margin-bottom: 32px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ---------- HOVER ---------- */
+.rental-card:hover,
+.admin-rental-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- IMAGE ---------- */
+.rental-card img,
+.admin-rental-card img {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;            /* ⬅️ image compress na ho */
+}
+
+/* ---------- TEXT AREA ---------- */
+.rental-info {
+  flex: 1;
+  padding-left: 8px;         /* ⬅️ text ko thoda right shift */
+}
+
+.rental-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.rental-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+
+/* ---------- STATUS TAG ---------- */
+.rental-info strong {
+  color: #111;
+  background: #f2f2f2;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* ---------- CANCEL BUTTON ---------- */
+.rental-info button {
+  margin-top: 12px;
+  padding: 6px 16px;
+  font-size: 13px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+  color: white;
+
+  transition: all 0.25s ease;
+}
+
+.rental-info button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 77, 77, 0.4);
+}
+
+/* ---------- CANCELLED STATE ---------- */
+.rental-card.cancelled,
+.admin-rental-card.cancelled {
+  opacity: 0.55;
+  filter: grayscale(40%);
+  position: relative;
+}
+
+/* ---------- CANCELLED STAMP ---------- */
+.rental-card.cancelled::after,
+.admin-rental-card.cancelled::after {
+  content: 'ORDER CANCELLED';
+  position: absolute;
+  top: 12px;
+  left: 14px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #fff;
+  background: linear-gradient(135deg, #ff4d4d, #c91818);
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  transform: rotate(-12deg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- DESKTOP LAYOUT OPTIMIZATION ---------- */
+@media (min-width: 900px) {
+  .rental-info {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;  /* ⬅️ gap kam */
+    column-gap: 20px;                  /* ⬅️ tighter */
+    align-items: start;
+  }
+
+  .rental-info h3 {
+    grid-column: span 2;
+    font-size: 17px;
+  }
+
+  .rental-info button {
+    width: fit-content;
+  }
 }
