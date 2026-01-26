@@ -340,6 +340,11 @@ const Add = ({ url }) => {
               <option value="Technology">Technology</option>
               <option value="Travel">Travel</option>
               <option value="Health">Health</option>
+               <option value="Hindi">Hindi</option>
+              <option value="Marathi">Marathi</option>
+              <option value="Gujrati">Gujrati</option>
+              <option value="French">French</option>
+              <option value="Urdu">Urdu</option>
             </select>
           </div>
 
