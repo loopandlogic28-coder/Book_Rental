@@ -37,7 +37,7 @@ export default function ChatPopup({ isOpen, onClose }) {
     setTyping(true);
 
     try {
-      const res = await fetch("http://localhost:4000/api/chatbot", {
+      const res = await fetch("https://book-rental-backend-mjwe.onrender.com/api/chatbot", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: finalText }),
