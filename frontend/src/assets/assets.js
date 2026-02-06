@@ -89,21 +89,34 @@ import user_2 from "./user-2.png"
 import user_3 from "./user-3.png"
 import user_4 from "./user-4.png"
 import aboutusbook from "./aboutus_book.jpg"
-import fiction from "./Fiction.jpg"
-import finance from "./Finance.jpg"
-import nonfiction from "./Nonfiction.jpg"
-import comic from "./Comic.jpg"
-import novel from "./Novels.jpg"
-import technology from "./Technology.jpg"
+/// categoryi= img yahan se change hongee yeh sab se 
+// import fiction from "./Fiction.jpg"
+// import finance from "./Finance.jpg"
+// import nonfiction from "./Nonfiction.jpg"
+// import comic from "./Comic.jpg"
+// import novel from "./Novels.jpg"
+// import technology from "./Technology.jpg"
+// import hindi_book from "./hindi_book.webp"
+// import marathi_book from "./marathi_book.svg"
+// import gujrati_book from "./gujrati_book.jpg"
+// import french_book from "./french_book.jpg"
+// import urdu_book from "./urdu_book.jpg"
+
+import fiction from "./fiction_category.jpeg"
+import finance from "./finance_category.jpeg"
+import nonfiction from "./non_fiction_category.jpeg"
+import comic from "./comics_category.jpeg"
+import novel from "./novels_category.jpeg"
+import technology from "./technology_category.jpeg"
+import hindi_book from "./hindi_category.jpeg"
+import marathi_book from "./marathi_category.jpeg"
+import gujrati_book from "./gujarati_category.jpeg"
+import french_book from "./french_category.jpeg"
+import urdu_book from "./urdu_category.jpeg"
 
 
-import hindi_book from "./hindi_book.webp"
-import marathi_book from "./marathi_book.svg"
-import gujrati_book from "./gujrati_book.jpg"
-import french_book from "./french_book.jpg"
-import urdu_book from "./urdu_book.jpg"
 
-
+import donors_banner from "./donners_banner.jpg"
 
 
 // user  guid imgs
@@ -168,6 +181,9 @@ export const assets = {
     french_book,
     gujrati_book,
     urdu_book,
+
+
+    donors_banner,
 }
 
 export const menu_list = [
