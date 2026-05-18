@@ -139,14 +139,14 @@ const Footer = () => {
           <ul>
             
             <li><Link to="/contactus">Contact-us</Link></li>
-            <li>8655089608</li>
+            <li>9769852912</li>
 
-            <li>loopandlogic28@gmail.com</li>
+            <li>arfeenkhan@gmail.com</li>
           </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2025 is reserved by BookDow</p>
+      <p className="footer-copyright">Copyright 2026 is reserved by BookDow</p>
     </div>
   );
 };
